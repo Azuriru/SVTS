@@ -1,0 +1,1 @@
+Svelte 4 + Vite + TypeScript boilerplate for future projects
