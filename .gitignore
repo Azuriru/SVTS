@@ -4,6 +4,7 @@
 /node_modules
 /build
 /package
+/output
 .env
 .env.*
 !.env.example
