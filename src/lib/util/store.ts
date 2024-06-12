@@ -52,7 +52,7 @@ export const localStorageBacked = function<T>(key: string, initial: T) {
 };
 
 let data: Record<string, any> | null = null;
-export const centralizedKey = 'azuretools-persistibles';
+export const centralizedKey = 'persistibles';
 export const persistible = function<T extends JSONValue>(localKey: string, initial: T): StoreContract<T> {
     if (browser && data === null) {
         const stored = localStorage.getItem(centralizedKey);
