@@ -1,7 +1,3 @@
-@function v($base, $unit: px, $multiplier: 4) {
-    @return #{$base * $multiplier}#{$unit};
-}
-
 @mixin flex($props...) {
     @if index($props, hidden) {
         display: none;
@@ -13,6 +9,12 @@
         @if $prop == center {
             align-items: center;
             justify-content: center;
+        } @else if $prop == start {
+            align-items: start;
+            justify-content: start;
+        } @else if $prop == end {
+            align-items: flex-end;
+            justify-content: end;
         } @else if $prop == startY {
             align-items: flex-start;
         } @else if $prop == centerY {

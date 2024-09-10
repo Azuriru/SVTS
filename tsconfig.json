@@ -8,10 +8,11 @@
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 		"noImplicitAny": false,
+		"noEmit": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
 		"strictNullChecks": true,
-		"verbatimModuleSyntax": false,
+		"verbatimModuleSyntax": true,
 	},
 }
