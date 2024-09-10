@@ -24,19 +24,19 @@
     $offset-size: if($offset, $offset, $size);
 
     @if $direction == 'top' {
-        @return 0 -$size #{$spread} #{$color};
+        @return 0 (-$size) #{$spread} #{$color};
     } @else if $direction == 'bottom' {
         @return 0 $size #{$spread} #{$color};
     } @else if $direction == 'left' {
-        @return -$size 0 #{$spread} #{$color};
+        @return (-$size) 0 #{$spread} #{$color};
     } @else if $direction == 'right' {
         @return $size 0 #{$spread} #{$color};
     } @else if $direction == 'top-left' {
-        @return -$offset-size -$size #{$spread} #{$color};
+        @return (-$offset-size) (-$size) #{$spread} #{$color};
     } @else if $direction == 'top-right' {
-        @return $offset-size -$size #{$spread} #{$color};
+        @return $offset-size(-$size) #{$spread} #{$color};
     } @else if $direction == 'bottom-left' {
-        @return -$offset-size $size #{$spread} #{$color};
+        @return (-$offset-size) $size #{$spread} #{$color};
     } @else if $direction == 'bottom-right' {
         @return $offset-size $size #{$spread} #{$color};
     } @else {
